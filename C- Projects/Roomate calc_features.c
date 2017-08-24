@@ -1,3 +1,5 @@
+// A c++ program to compute expenses shared by roomates in an apartment
+
 #include <stdio.h>
 #include <math.h>
 
@@ -64,7 +66,7 @@ int main(void)
     printf("Expense statement as at .........\n");
     printf("----------------------------------\n\n");
     
-    reportfile = fopen("C:\\Users\\MATRIX\\Desktop\\class\\Projects\\PRJ1\\OUPUT.txt","w");
+    reportfile = fopen("OUPUT.txt","w");
     // Prints header to report file //
     fprintf(reportfile,"*****ROOMATE EXPENSE CALCULATOR*****\n\n");
     fprintf(reportfile,"Expense statement as at .........\n");
@@ -76,7 +78,7 @@ int main(void)
 	
 	fclose(reportfile);
 
-datafile=fopen("C:\\Users\\MATRIX\\Desktop\\class\\Projects\\PRJ1\\INPUT.txt","w");
+datafile=fopen("INPUT.txt","w");
 
 	//fprintf(datafile,"*****ROOMATE EXPENSE CALCULATOR*****\n\n");
 	
@@ -95,14 +97,6 @@ std::fstream fs;
 
 
 }
-
-    	
-
-    
-    
-	
-
-
 
 
 
@@ -149,27 +143,27 @@ void GetInfo(void)
 void Process(void) 
 {
 	
-}
+
 
    // Process import and export data  //
 
-//datafile=fopen("C:\\Users\\MATRIX\\Desktop\\class\\Projects\\PRJ1\\INPUT.txt","r");
+datafile=fopen("INPUT.txt","r");
 
-     //while(!feof(datafile))           /*loop condition*/
-//	{
+     while(!feof(datafile))           /*loop condition*/
+	{
      
-	 //fscanf(datafile,"%s%f\n",&type,&amount);
+	 fscanf(datafile,"%s%f\n",&type,&amount);
      
-     //Net=Net+ amount;
-     
-     
-     //fprintf(reportfile,"%s%18.2f%18.2f\n",type,fabs(amount),Net);
+     Net=Net+ amount;
      
      
+     fprintf(reportfile,"%s%18.2f%18.2f\n",type,fabs(amount),Net);
      
      
      
-  // }
+     
+     
+  }
    
 
 
