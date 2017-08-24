@@ -33,7 +33,7 @@ int main(void) {
 
 void Header(void) {
 
-     printf(              "**** KICKSTATR ****\n\n ");
+     printf(              "**** SAVINGS PLANNER ****\n\n ");
     
    
    
