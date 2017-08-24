@@ -1,7 +1,3 @@
-Ater Akrofi
-ST ID : 10882731
-Report on Implementation: 
-Python program to count stop words from a Wikipedia xml dump 
 
 1.	INTRODUCTION
 The goal of this implementation project was to create a program that can provide the count of stop words instances from a downloaded Wikipedia xml file. The XML dump file was 82MB in size and contained abstracts of several Wikipedia pages. The file was downloaded from https://dumps.wikimedia.org/enwiki/20170301/ and saved as test.xml
