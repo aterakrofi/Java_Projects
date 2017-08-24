@@ -1,3 +1,5 @@
+// A savings planner to recommend a savings plan for the user //
+
 #include <stdio.h>
 #include <math.h>
 
