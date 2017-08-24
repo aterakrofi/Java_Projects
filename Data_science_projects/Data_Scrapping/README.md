@@ -10,8 +10,7 @@ With Element tree, it was possible to select title and abstract tags as child no
 Second Step: Removed empty spaces from raw lists
 The raw lists contained empty spaces that prevented further processing on these lists. A simple condition was set to prevent appending empty spaces to lists 
 
-Third Step: Removed punctuation
-Further processing was done to remove punctuation from the saved lists. This was achieved using a combination of “join” and punctuation  
+Third Step: Removed punctuationFurther processing was done to remove punctuation from the saved lists. This was achieved using a combination of “join” and punctuation  
 
 Fourth step: Convert lists to Wordlist
 The python lists contained in some cases full sentences or two or more words represented as a single list item. Using the split() function these sentences were separated into individual wordlists. 
