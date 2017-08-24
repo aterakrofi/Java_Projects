@@ -1,53 +1,28 @@
 
-# coding: utf-8
-
-# In[1]:
-
 #Python program to calculate metrics from the English premierleague 
 #By Ater Akrofi
 from __future__ import division 
 import pandas as pd
 import numpy as np
 
-
-
-
-# In[2]:
-
 #Dataset in csv format
 dataset = pd.read_csv("EPL.csv")
 
-
-# In[3]:
-
 #Peak at dataset
 dataset.head(4)
-
-
-
-# In[4]:
 
 #Numpy array of goals scored by Home Team
 Home_Team_Goals=np.array(dataset['FTHG'])  # FTHG is full time home goals
 print((Home_Team_Goals))
 
-
-# In[5]:
-
 #Numpy array of shots on target by home team
 HST=np.array(dataset['HST']) #HST is the home shots on target
 print((HST))
-
-
-# In[6]:
 
 #Metric 1 : Total goals
 
 Total_Goals=sum(Home_Team_Goals) #summation of the array of home team goals
 print "Total Home goals scored : %s" % Total_Goals
-
-
-# In[7]:
 
 #Metric 2 :Average Goals per game(Total Goals/Total Games)
 
@@ -61,16 +36,9 @@ print "Total Games: %s" % Total_Games
 Average_Goals=Total_Goals/Total_Games
 print "Average goals per game : %s" % Average_Goals
 
-
-# In[8]:
-
 # Metric 3 : Frequency or number of times a home team scored more than 3 goals
-
 Freq=np.count_nonzero(Home_Team_Goals > 3) # count of goals scored > 3
 print "Number of times Home teams scored more than 3 goals: %s" % Freq
-
-
-# In[18]:
 
 #Metric 4 : Shooting percentage(SP) for Liverpool's 1st home game(Liverpool v Leicester)
 
@@ -84,9 +52,6 @@ print "Liverpool Shots on target against Leicester: %s" % LFC_HST
 SP=(LFC_GS/LFC_HST)*100
 #print('LFC shooting percentage',SP,'%')
 print "Liverpool's shooting percentage : %s" % SP
-
-
-# In[20]:
 
 #Corelation between Home goals and shots on target
 
