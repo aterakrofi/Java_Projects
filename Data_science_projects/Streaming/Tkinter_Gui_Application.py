@@ -1,7 +1,6 @@
 
 # coding: utf-8
 
-# In[1]:
 
 #By Ater Akrofi
 #Python program to stream real time temperature updates for California and New Jersey
@@ -183,13 +182,6 @@ Gui.geometry("1280x720")
 streamer = animation.FuncAnimation(f, animate, interval=7200 )
 Gui.mainloop()
 
-
-# In[ ]:
-
-
-
-
-# In[ ]:
 
 
 
