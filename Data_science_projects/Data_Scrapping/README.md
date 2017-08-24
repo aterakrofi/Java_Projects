@@ -21,11 +21,8 @@ By now we have 3 lists (title, anchor and abstract) which would need to be merge
 Final Step: Run count
 The count () method was used to perform the count of the Wikipedia page dump
 
-3.	RESULTS
-Screenshot of output file
-
-4.	CHALLENGES
+3.	CHALLENGES
 The processing of the 82MB Wikipedia xml file took approximately 45 seconds to output results. Considering this was a relatively small file, it may take several minutes to run bigger files.  
 
-5.	CONCLUSION
+4.	CONCLUSION
 This method of determining the count of stop words was not efficient in terms of execution time but effective in solving the problem. 
