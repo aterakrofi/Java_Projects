@@ -1,0 +1,1 @@
+The dataset for this analysis was acquired from http://www.football-data.co.uk/mm z4281/1617/E0.csv . This dataset is represented by 355 matches played, 20 different football teams and statistics gathered from the 2016-2017 English Premier League(EPL) season. A summary of what the dataset contains is shown below:
