@@ -1,4 +1,4 @@
-// A c++ program to compute expenses shared by roomates in an apartment
+// A workin-in progress c++ program to compute expenses shared by roomates in an apartment
 
 #include <stdio.h>
 #include <math.h>
