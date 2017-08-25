@@ -35,7 +35,7 @@ public class MyCipher {
 	  /*key */
      DataInputStream dis =
 		    new DataInputStream (
-		    	 new FileInputStream ("/Users/Skelix/Desktop/labs/key.txt"));
+		    	 new FileInputStream ("key.txt"));
 
 		 byte[] datainBytes = new byte[dis.available()];
 		 dis.readFully(datainBytes);
