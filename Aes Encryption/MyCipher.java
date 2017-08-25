@@ -46,7 +46,7 @@ public class MyCipher {
 	/*  original text */
 		 DataInputStream pdis =
 				    new DataInputStream (
-				    	 new FileInputStream ("/Users/Skelix/Desktop/labs/original50mb.txt"));
+				    	 new FileInputStream ("original.txt"));
 
 				 byte[] pBytes = new byte[pdis.available()];
 				 pdis.readFully(pBytes);
@@ -60,7 +60,7 @@ public class MyCipher {
   	
    /*Printing encryption to text file*/
   
-  	try(  PrintWriter out = new PrintWriter( "/Users/Skelix/Desktop/labs/encrypted1.txt" )  ){
+  	try(  PrintWriter out = new PrintWriter( "encrypted.txt" )  ){
   	    out.println( crp );
   	      
   	}
@@ -68,7 +68,7 @@ public class MyCipher {
   	
   	
   
-  	try(  PrintWriter out = new PrintWriter( "/Users/Skelix/Desktop/labs/decrypted1.txt" )  ){
+  	try(  PrintWriter out = new PrintWriter( "decrypted1.txt" )  ){
   	    out.println( dec );
   	      
   	}
