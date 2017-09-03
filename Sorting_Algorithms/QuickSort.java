@@ -1,4 +1,4 @@
-/*Java program to implement Quick Sort*/
+/*Java program to implement Quick Sort on 100000 floatin point arrays*/
 import java.io.*;
 import java.util.Arrays;
 import java.util.Random;
