@@ -1,8 +1,8 @@
 
-1.	INTRODUCTION
+# 1.	INTRODUCTION
 The goal of this implementation project was to create a program that can provide the count of stop words instances from a downloaded Wikipedia xml file. The XML dump file was 82MB in size and contained abstracts of several Wikipedia pages. The file was downloaded from https://dumps.wikimedia.org/enwiki/20170301/ and saved as test.xml
 
-2.	APPROACH
+# 2.	APPROACH
 First Step: Parsed XML file into an Element Tree
 
 The element tree is a container object that makes it possible to store and represent XML tags as parent, child, neighbors or grandparent nodes.
@@ -26,10 +26,10 @@ By now we have 3 lists (title, anchor and abstract) which would need to be merge
 Final Step: Run count
 The count () method was used to perform the count of the Wikipedia page dump
 
-3.	CHALLENGES
+# 3.	CHALLENGES
 
 The processing of the 82MB Wikipedia xml file took approximately 45 seconds to output results. Considering this was a relatively small file, it may take several minutes to run bigger files.  
 
-4.	CONCLUSION
+# 4.	CONCLUSION
 
 This method of determining the count of stop words was not efficient in terms of execution time but effective in solving the problem. 
